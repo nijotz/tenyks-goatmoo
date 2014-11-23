@@ -2,7 +2,7 @@ DEBUG = True
 SERVICE_NAME = 'goatmoo'
 SERVICE_VERSION = '0.1.0'
 SERVICE_UUID = '16a939ac-fbbb-4a30-9842-0754e4d35f06'
-SERVICE_DESCRIPTION = 'I hear whispers'
+SERVICE_DESCRIPTION = 'Goat Tower MOO'
 
 ##############################################################################
 # The following setting defines a dictionary containing Redis connection
