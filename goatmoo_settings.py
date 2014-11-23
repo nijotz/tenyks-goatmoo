@@ -11,7 +11,7 @@ SERVICE_DESCRIPTION = 'Goat Tower MOO'
 # This setting is required.
 
 REDIS_CONNECTION = {
-    'host': '192.168.33.66',
+    'host': 'localhost',
     'port': 6379,
     'db': 0,
     'password': None,
