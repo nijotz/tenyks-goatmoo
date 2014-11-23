@@ -17,8 +17,10 @@ class GoatMOO(TenyksService):
         if not user:
             actor = Actor(name=nick)
             actor.parent_id = 1
-            user = User(name=nick, actor=actor)
             session.add(actor)
+            session.commit()
+            user = User(name=nick)
+            user.actor_id = actor.id
             session.add(user)
             session.commit()
 
