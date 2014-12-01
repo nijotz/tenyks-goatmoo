@@ -30,6 +30,6 @@ REDIS_CONNECTION = {
 #
 # These settings are optional
 
-BROADCAST_SERVICE_CHANNEL = 'tenyks.service.broadcast'
-BROADCAST_ROBOT_CHANNEL = 'tenyks.robot.broadcast'
+BROADCAST_SERVICE_CHANNEL = 'tenyks.services.broadcast_to'
+BROADCAST_ROBOT_CHANNEL = 'tenyks.robot.broadcast_to'
 ##############################################################################
