@@ -31,8 +31,11 @@ class GoatMOO(TenyksService):
         self.logger.debug('Goat command: {cmd}'.format(cmd=cmd))
         engine.handle_text(user.actor.id, cmd)
 
-        for line in engine.get_text(user.actor.id):
-            self.send(line.replace('\n', ''), data)
+        for text in engine.get_text(user.actor.id):
+            for line in text.split('\n'):
+                if line == '':
+                    line = ' '
+                self.send(line, data)
 
 
 def main():
