@@ -28,7 +28,7 @@ class GoatMOO(TenyksService):
         if not cmd:
             cmd = 'look'
 
-        self.logger.debug('Goat command: {cmd}'.format(cmd=cmd))
+        self.logger.debug('Goat command from {user}: {cmd}'.format(user=nick, cmd=cmd))
         engine.handle_text(user.actor.id, cmd)
 
         for text in engine.get_text(user.actor.id):
